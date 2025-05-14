@@ -25,7 +25,7 @@ The script syncs Headscale (or Tailscale) node IPs to a Cloudflare-hosted DNS zo
 
 ## Recommended Deployment: Docker Compose with `.env` File
 
-This method is recommended for ease of configuration and secret management using the Docker image `iamdockin/hs-cf-dns-sync:0.0.2`.
+This method is recommended for ease of configuration and secret management using the Docker image `iamdockin/hs-cf-dns-sync:0.0.3`.
 
 **1. Prepare your Environment File**
 
