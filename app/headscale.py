@@ -21,4 +21,6 @@ def getHeadscaleDevice(apikey, baseurl):
                     output.append({'hostname': alterHostname(device['givenName'].split('.')[0].lower()), 'address': address})
         return output
     else:
-        exit(colored("getTailscaleDevice() - {status}, {error}".format(status=str(response.status_code), error=data['message']), "red"))
+        error_message = "getTailscaleDevice() - {status}, {error}".format(status=str(response.status_code), error=data['message'])
+        print(colored(error_message, "red")) # Print the colored error
+        exit(1) # Exit with a non-zero status code
