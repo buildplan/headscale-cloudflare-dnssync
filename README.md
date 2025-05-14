@@ -53,6 +53,13 @@ hs_apikey=YOUR_HEADSCALE_API_KEY
 # prefix=
 # Optional: Postfix for DNS records (e.g., result: node-postfix.ts.yourdomain.com)
 # postfix=
+
+# set sync interval - default is 15m
+SYNC_INTERVAL_MINUTES=120
+
+# for logs
+PYTHONUNBUFFERED=1
+
 ````
 
 **2. Create `docker-compose.yml` (or add to existing)**
