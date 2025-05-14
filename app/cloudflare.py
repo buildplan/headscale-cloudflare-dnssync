@@ -17,7 +17,9 @@ def getZoneId(token, domain):
             if zone['name'] == domain:
                 return zone['id']
     else:
-        exit(colored('getZoneId(): '+json.dumps(data['errors'], indent=2), "red"))
+        error_message = 'getZoneId(): ' + json.dumps(data['errors'], indent=2)
+        print(colored(error_message, "red")) # Print the colored error
+        exit(1) # Exit with a non-zero status code
 
 
 def getZoneRecords(token, domain, hostname=False, zoneId=False):
