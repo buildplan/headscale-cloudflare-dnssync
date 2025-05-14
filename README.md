@@ -1,4 +1,4 @@
-# tailscale-cloudflare-dnssync
+# headscale-cloudflare-dnssync
 Syncs Tailscale (or Headscale) host IPs to a cloudflare hosted DNS zone.
 Basically works like Magic DNS, but with your domain.
 The main benefit for me is the ability to use letsencrypt with certbot + dns challenge
