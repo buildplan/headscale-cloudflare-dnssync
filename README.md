@@ -69,7 +69,7 @@ Add this service definition:
 ```yaml
 services:
   cloudflare-dns-sync:
-    image: iamdockin/hs-cf-dns-sync:0.0.2
+    image: iamdockin/hs-cf-dns-sync:0.0.3
     container_name: cloudflare-dns-sync
     restart: unless-stopped
     pull_policy: always # Ensures you get updates if you retag the image
@@ -105,7 +105,7 @@ docker compose logs -f cloudflare-dns-sync
     ```shell
     docker run -d --rm --name cloudflare-dns-sync \
       --env-file ./dnssync.env \
-      iamdockin/hs-cf-dns-sync:0.0.2
+      iamdockin/hs-cf-dns-sync:0.0.3
     ```
 
     *(Use `-it` instead of `-d` for interactive mode to see logs directly).*
